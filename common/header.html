@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/x-icon" href="css/logoonly.ico">
+  <style>
+    .navbar-toggler, .dropdown-menu{
+      border-color: transparent !important;
+    }
+
+    /* #navbackground {
+      background-color: rgba(93, 93, 93, 0.01) !important;
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+    } */
+
+    #navbackground {
+      top: 0;
+      display: block;
+      transition: top .7s;
+    }
+
+
+    .dropdown-menu {
+      background-color: rgba(93, 93, 93, 0.01) !important;
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+    }
+
+    .nav-link {
+      color: rgb(143, 143, 143);
+      letter-spacing: 2px;
+    }
+
+    .nav-link:hover {
+      color: white;
+    }
+
+    .dropdown-item:hover {
+      color: black;
+      background-color: transparent !important;
+      box-shadow: black 0px 1px 0px;
+    }
+
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 3px !important; /* The distance between text and underline */
+    }
+
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px; /* vertical size of underline */
+      bottom: -3px;
+      left: 0;
+      background-color: black;
+      transform: scaleX(0);
+      transform-origin: bottom center;
+      transition: transform .2s ease-in; /* duration and timing style of animation */
+    }
+
+    .nav-link:hover::before {
+      transform: scaleX(1);
+    }
+
+    .hash:focus,.hash:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+
+    @media (max-width: 767px) {
+    #navbarNav {
+      display: contents !important;
+    }
+    .navbar-nav {
+      padding-top: 20px;
+    }
+    .nav-item {
+      margin: 0 0 10px 0;
+    }
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-transparent navbar-light" style="padding-left: 10px; padding-right: 10px; " id="navbackground">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="#">
+        <img src="css/logo.png" alt="Logo" style="width: 150px;" id="logo">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" style="font-size: 20px;" id="txt">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="portfolio" style="color: rgb(255, 255, 255); font-weight: bold; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: white;">PORTFOLIO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+
+
+

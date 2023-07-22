@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons@2.0.0-beta.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio | Janrie Veneracion</title>
+    <style>
+        body {
+            background-color: black !important;
+        }
+
+        .side-nav:hover {
+            /* box-shadow: black 0px 3px 0px; */
+        }
+        .side-nav.active {
+            background-color: transparent !important;
+            box-shadow: black 0px 3px 0px;
+            border-radius: 0% !important;
+            /* font-weight: bold; */
+        }
+
+        .my-1 {
+            font-size: 13px;
+        }
+
+        .demolink, .demolink.active, .demolink:visited {
+            color: black;
+        }
+
+        hr {
+            background-color: black;
+            opacity: .1;
+        }
+
+        .bg-white, .bg-dark {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+
+        .hash:hover {
+            text-decoration: none;
+            color: black !important;
+        }
+
+        .hash:focus,.hash:active {
+            outline: none !important;
+            box-shadow: none;
+        }
+
+        .card {
+            border: none !important;
+        }
+
+        .cert-img:hover, .projpic:hover {
+            filter: brightness(80%);
+            scale: 1.01;
+        }
+
+        .certimg {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .carousel-indicators{
+            bottom: -40px !important;
+        }
+
+        .cil-arrow-circle-top:hover {
+            transform: scale(1.1);
+        }
+        
+        .cil-arrow-circle-top.active, .cil-arrow-circle-top.active.visited, .cil-arrow-circle-top {
+            color: black;
+        }
+
+        .cil-arrow-circle-top {
+            animation: tada 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+        }
+
+        .about-me {
+            -webkit-backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.31);
+            border-radius: 10px;
+        }
+
+        .my-name {
+            font-size: 40px;
+            font-family: Baghdad;
+            position: absolute;
+        }
+
+        .head-icon {
+            color: white !important;
+        }
+
+        .under-about-me {
+            float: right;
+        }
+
+        .about-visits {
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.83);
+            padding: 2px;
+            border-radius: 10px;
+            padding-right: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="header"></div>
+
+<div class="portfolio-body bg-light" style="margin-top: -90px;">
+    <div class="portheadfilter"> 
+        <div class="container-fluid d-flex justify-content-center align-items-center parallax">
+            <div class="porthead container-xxl text-white  pt-4">
+                <div class="pt-5 pb-5 text-light row">
+                    <div class="col-xl-4 col-lg-12 d-flex justify-content-center align-items-center">
+                        <div>
+                            <img src="css/self.png" class="d-block my-photo" width='400px' alt="Photo of Janrie Veneracion">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <span class="my-name" style="">Janrie Veneracion</span>
+                                <span class="signature"><img src="css/sign.png" class="" id="sign" alt="pensign" style="filter: invert(); width: 350px; z-index: 0;"></span>
+                            </div>
+                            <div style="display: flex; justify-content: center; margin-top: -30px;">
+                                <ul class="list-inline mt-2" style="z-index: 10;">
+                                    <li class="list-inline-item pr-1 pl-1"><a href="https://www.facebook.com/jnr.veneracion.3" target="_blank" title="facebook"><i class="head-icon fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item pr-1 pl-1"><a href="https://www.instagram.com/janrieveneracion/" target="_blank" title="instagram"><i class="head-icon fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item pr-1 pl-1"><a href="https://www.linkedin.com/in/jnrveneracion/" target="_blank" title="LinkedIn"><i class="head-icon fa fa-brands fa-linkedin"></i></i></a></li>
+                                    <li class="list-inline-item pr-1 pl-1"><a href="https://github.com/jnrveneracion" target="_blank" title="Github"><i class="head-icon fa fa-github"></i></a></li>
+                                    <li class="list-inline-item pr-1 pl-1"><a href="mailto:jnrvnrcn@gmail.com" target="_blank" title="Email"><i class="head-icon fa fa-solid fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-12 d-flex justify-content-center align-items-center">
+                        <div class="about-me p-3">
+                            <p id='about-me'>Hello, I am delighted to introduce myself as an entry-level website developer who is passionate about combining design and programming. As an individual who is highly detail-oriented, I find joy in observing and discovering new things. For me, every detail presents an opportunity to learn and improve. I welcome constructive feedback as it helps me design better solutions that cater to the needs of my clients. I am grateful for the opportunities that have allowed me to pursue my passion and I am eager to bring my skills and enthusiasm to every project I work on.</p>
+                            <p>Through my experience as a trainee at both TESDA CCMTC and DICT, I have had the opportunity to learn and refine my skills in computer programming, web management, computer repair and maintenance, and resolving IT issues. Although my learning may not be as deep as someone with years of experience, I am grateful for the valuable experience and knowledge I have gained during my training. The tasks and responsibilities assigned to me have allowed me to develop my adaptability, time management, attention to detail, teamwork, and communication skills, which I believe will serve me well in my future endeavors. I am eager to continue learning and growing as I pursue my passion for technology.</p>
+                            <p>I am deeply passionate about technology and continuously seek opportunities to enhance my skills and knowledge. I am eager to bring my technical expertise and soft skills to any organization that values innovation, growth, and collaboration.</p>
+                            <div class="under-about-me">
+                                <ul class='about-visits'>
+                                    <?php //include('heart.php') ?>
+                                    <?php //include('visited.php') ?>
+                                    <?php //include('get-device.php') ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>    
+    
+    <script>
+
+        if (window.innerWidth > 768) {
+            const porthead = document.querySelector('.porthead');
+            const parallax = document.querySelector('.parallax');
+            let opacity = 1;
+            let blur = 0;
+
+            window.addEventListener('scroll', () => {
+            const newOpacity = 1 - (window.scrollY / window.innerHeight) * .2;
+            const newBlur = (window.scrollY / window.innerHeight) * 3;
+            
+            if (newOpacity !== opacity) {
+                opacity = newOpacity;
+                porthead.style.opacity = `${newOpacity}`;
+                // parallax.style.filter = `blur(${newBlur}px)`;
+                }
+            });
+        }
+        // filter: blur(1px);
+    </script>
+    
+    <!-- <div class="container-xxl w-80 overflow-auto"> pt-8 p-2 mt-5 mb-5-->
+        <div class="container-xxl">
+            <span id="skills-experience-work"></span>
+            <div class="mt-4">
+                <span class="portheadtexta" style="font-size: 50px;">Crafting My Path:</span><br><span class="portheadtextb" style="font-size: 80px;"> A Showcase of My Skills, Work, and Training</span>
+            </div>
+            <h1 class="p-3">Skills<a class="text-light-emphasis hash" href="#skills" id="skills"> #</a></h1>
+            <div class="row justify-content-md-center justify-content-sm-start align-items-end text-center text-dark">
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-html5 fa-2x"></div><span class="mt-1 mb-3 skilltext">HTML</span></div>
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-css3 fa-2x"></div><span class="mt-1 mb-3 skilltext">CSS3</span></div>
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-javascript fa-2x"></div><span class="mt-1 mb-3 skilltext">JAVASCRIPT</span></div>
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-php fa-2x"></div><span class="mt-1 mb-3 skilltext">PHP</span></div>
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-mysql fa-2x"></div><span class="mt-1 mb-3 skilltext">MYSQL</span></div>
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-c fa-2x"></div><span class="mt-1 mb-3 skilltext">C</span></div>
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-python fa-2x"></div><span class="mt-1 mb-3 skilltext">PYTHON</span></div>
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-wordpress fa-2x"></div><span class="mt-1 mb-3 skilltext">WORDPRESS</span></div>
+                <!-- <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-github fa-2x"></div><span class="mt-1 mb-3 skilltext">GITHUB</span></div> -->
+                <div class="col-4 col-sm-2 col-md-1 p-0"><div class="mb-2 cib-bootstrap fa-2x"></div><span class="mt-1 mb-3 skilltext">BOOTSTRAP</span></div>
+            </div>
+        </div>
+    <!-- </div> -->
+
+    <div class="container-xxl p-3" >
+        <h1 class="p-3">Training Experience<a class="text-light-emphasis hash" href="#experience" id="experience"> #</a></h1>
+        <div class="row mr-sm-3 ml-sm-3 mr-xxl-3 ml-xxl-3 justify-content-start">
+            <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card bg-white h-100">
+                <img src="css/exppics/1.jpg" class="card-img-top" alt="..." style="filter: brightness(50%);">    
+                <div class="card-body">
+                    <h5 class="card-title">Python Programming Essential Course</h5>
+                    <p class="mb-0"><strong>Training duration:</strong> 30 Hours</p>
+                    <p class="mb-0"><strong>Date conducted:</strong> Dec 6 to 10, 2021</p>
+                    <p><strong>Conducted by:</strong> DICT</p>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#expinfo" output-link="<a href='https://github.com/jnrveneracion/python-programming-dict-training' class='demolink'>https://github.com/jnrveneracion/python-programming-dict-training</a>" button-cert='<img src="css/certificates/2.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Python Programming Essential Course" data-image-location="css/certificates/2.png"/>' data-bs-whatever="Python Programming Essential Course" data-bs-content="I learned the basics of Python programming and Object-Oriented Programming (OOP). Throughout the course, I was introduced to important concepts such as variables, data types, operators, functions, data structures, input and output, exception handling, classes and objects, inheritance, polymorphism, encapsulation, and abstraction. What made the training program particularly enjoyable was the opportunity to apply what I learned through hands-on exercises and projects. By the end of the training program, I felt confident in my knowledge of Python programming and OOP principles and was eager to continue exploring the field. Overall, the Python Programming Essentials training program was an excellent experience that taught me valuable skills I can use in my future programming endeavors.">Training Experience</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card bg-white h-100">
+                <img src="css/exppics/2.jpg" class="card-img-top" alt="..." style="filter: brightness(50%);">     
+                <div class="card-body">
+                    <h5 class="card-title">Digital Jobs PH WordPress Management Training</h5>
+                    <p class="mb-0"><strong>Training duration:</strong> 24 Days</p>
+                    <p class="mb-0"><strong>Date conducted:</strong> March 2 to April 29, 2022</p>
+                    <p><strong>Conducted by:</strong> DijitalJobsPH, DICT, ILCDB</p>  
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#expinfo" output-link="<a href='https://bit.ly/40jWdA9' class='demolink'>Google Drive</a>" button-cert='<img src="css/certificates/1.png" class="projpic w-50 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Digital Jobs PH WordPress Management Training" data-image-location="css/certificates/1.png"/>' data-bs-whatever="Digital Jobs PH WordPress Management Training" data-bs-content="<p>The Digitaljobsph WordPress Development Training was an eye-opener for me as I was curious about why WordPress is so popular in web development job postings. As a fan of dict webinars, I saw this training offering and decided to apply as a trainee. During my interview, I remember being asked if this was my second time in a Digitaljobsph training, and I answered that it was my first if I got lucky. After a week, I was grateful to have been given the opportunity to be one of the trainees.</p><p>During the training, I was both surprised and shy because I was the only student and the youngest in the training. Most of the other participants were already professionals in the field. Despite this, I was able to continue, finish, and complete all the tasks assigned to us. Overall, the Digitaljobsph WordPress Development Training was a great learning experience for me, and it allowed me to gain the skills and knowledge I needed to pursue a career in web development.</p><p>The coach of the training taught us how to become a Wordpress manager, from buying a domain to manually installing Wordpress. He also taught us how to use plugins such as Elementor, Yoast SEO, and Woocommerce, as well as how to integrate Wordpress with Google Analytics and payment gateways like PayPal. He also taught us how to sell our skills by creating our own online profile, designing our own logo, identifying our target audience, and maintaining professional social media accounts.</p>">Training Experience</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card bg-white h-100">
+                <img src="css/exppics/3.jpg" class="card-img-top" alt="..." style="filter: brightness(50%);"> 
+                <div class="card-body">
+                    <h5 class="card-title">Python Programming Essentials</h5>
+                    <p class="mb-0"><strong>Training duration:</strong> 40 Hours</p>
+                    <p class="mb-0"><strong>Date conducted:</strong> Oct 17 to 28, 2022</p>
+                    <p><strong>Conducted by:</strong> DICT</p>  
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#expinfo" output-link="<a href='https://github.com/jnrveneracion/python-programming-dict-training' class='demolink'>https://github.com/jnrveneracion/python-programming-dict-training</a>" button-cert='<img src="css/certificates/4.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Python Programming Essentials" data-image-location="css/certificates/4.png"/>' data-bs-whatever="Python Programming Essentials" data-bs-content="I attended a Python Programming Essentials training course that covered the basics of Python programming, including file handling. Compared to the first course I took, this training had a different approach to teaching. Instead of focusing on lectures, there were more activities that allowed us to apply what we learned. This hands-on approach helped me better understand the concepts and how to apply them in real-world scenarios. The file handling part of the course was particularly useful, as it taught me how to read, write, and manipulate data from files using Python. Overall, this training expanded my knowledge and skills in Python programming, and I'm excited to use them in future projects.">Training Experience</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-3">
+                <div class="card bg-white h-100">
+                <img src="css/exppics/4.jpg" class="card-img-top" alt="..." style="filter: brightness(50%);"> 
+                <div class="card-body">
+                    <h5 class="card-title">Web Developement for Web Developers</h5>
+                    <p class="mb-0"><strong>Training duration:</strong> 40 Hours</p>
+                    <p class="mb-0"><strong>Date conducted:</strong> Oct 19, Nov 8, 23 to 24 and Dec 26, 2022</p>
+                    <p><strong>Conducted by:</strong> DICT</p>  
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#expinfo" output-link="<br>
+                    <a href='#Web-Development-Training-developed-a-simple-portfolio-website-using-HTML-CSS-and-JavaScript' class='demolink'>
+                    Web Development Training: developed a simple portfolio website
+                    </a>
+                    <br>
+                    <a href='#Database-Management-Training-developed-a-simple-database-using-MySQL-and-PHP' class='demolink'>
+                    Database Management Training: developed a simple database website</a>" button-cert='<img src="css/certificates/5.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Web Developement for Web Developers" data-image-location="css/certificates/5.png"/>' data-bs-whatever="Web Developement for Web Developers" data-bs-content="I participated in a Web Development training course for web developers, where we were taught the fundamentals of HTML, CSS, JavaScript, MySQL, PHP, and Bootstrap. Although the training schedule was not consistent, I am grateful for the opportunity to learn these important web development languages. The course covered basic concepts and allowed me to gain practical skills in creating dynamic and responsive web pages. The knowledge and skills I acquired from this training will be beneficial in my future web development projects.">Training Experience</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl justify-content-center d-flex">
+                <div class="modal-content " style="width: fit-content;">
+                <div class="modal-header bg-dark text-white" style="border: none !important;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+                </div>
+                <div class="modal-body p-0 m-0">
+                    <img src="" class="img-fluid" alt="...">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="expinfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg justify-content-center d-flex">
+                <div class="modal-content " style="width: fit-content;">
+                <div class="modal-header bg-dark text-white" style="border: none !important;">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+                </div>
+                <div class="modal-body p-2 m-2">
+                    <span class="cert justify-content-center d-flex"></span>
+                    <p class="training-exp"></p>
+                    <p><strong>Training outputs:</strong> <span class="training-output demolink" target="_blank"></span></p>    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const exampleModal = document.getElementById('exampleModal')
+        exampleModal.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget
+            const recipient = button.getAttribute('data-bs-whatever')
+            const modalTitle = exampleModal.querySelector('.modal-title')
+            const imageLocation = button.getAttribute('data-image-location')
+            const modalImage = exampleModal.querySelector('.modal-body img')
+            
+            modalTitle.textContent = `${recipient}`
+            modalImage.setAttribute('src', imageLocation)
+        })
+
+        const expinfo = document.getElementById('expinfo')
+        expinfo.addEventListener('show.bs.modal', event => {
+            const button = event.relatedTarget
+            const recipient = button.getAttribute('data-bs-whatever')
+            const getBody = button.getAttribute('data-bs-content')
+            const getButton = button.getAttribute('button-cert')
+            const getOutput = button.getAttribute('output-link')
+            const modalTitle = expinfo.querySelector('.modal-title')
+            const modalBody = expinfo.querySelector('.training-exp')
+            const modalButton = expinfo.querySelector('.cert')
+            const modaloutputlink = expinfo.querySelector('.training-output')
+            
+            modalTitle.textContent = `${recipient}`
+            modalBody.innerHTML = `${getBody}`
+            modalButton.innerHTML = `${getButton}`
+            // modaloutputlink.setAttribute('href', getOutput);
+            modaloutputlink.innerHTML = getOutput;
+        })
+    </script>
+
+    <div class="container-xxl">
+        <h1 class="p-3 ">Projects<a class="text-light-emphasis hash" href="#projects" id="projects"> #</a></h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-3 col-xl-0" id="sidescroll">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 pr-0">
+                    <nav class="nav nav-pills flex-column sticky-top overflow-auto" id="navs" style="top: 70px !important;"> <!-- style="top: 100px !important;" -->
+                        <a class="nav-link side-nav text-dark" href="#Training-Projects" disabled><h6>Training Projects</h6></a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Social-Media-Management-scheduling-and-posting-content-on-social-media-platforms" disabled>Social Media Management: scheduling and posting content on social media platforms</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Web-Development-Training-developed-a-simple-portfolio-website-using-HTML-CSS-and-JavaScript" disabled>Web Development Training: developed a simple portfolio website using HTML, CSS, and JavaScript</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Database-Management-Training-developed-a-simple-database-using-MySQL-and-PHP" disabled>Database Management Training: developed a simple database using MySQL and PHP</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Android-App-Development-developed-a-simple-portfolio-app-using-Android-Studio" disabled>Android App Development: developed a simple portfolio app using Android Studio</a>
+                        </nav>
+                        <a class="nav-link side-nav text-dark" href="#Self-Projects" disabled><h6>Self Projects</h6></a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Google-Sites-Development-developed-the-websites-for-Moldex-using-Google-Sites" disabled>Google Sites Development: developed the websites for Moldex using Google Sites</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Google-Sites-Development-developed-the-websites-for-Nickeysbox-using-Google-Sites" disabled>Google Sites Development: developed the websites for Nickeysbox using Google Sites</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Web-Development-created-a-web-app-that-converts-values" disabled>Web Development: created a Python-based web app that converts length values</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Web-Development-developed-a-Guess-the-Next-Letter-game" disabled>Web Development: developed a "Guess the Next Letter" game</a>
+                        </nav>
+                        <a class="nav-link side-nav text-dark" href="#School-Projects" disabled><h6>School Projects</h6></a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Python-Converter-App-developed-a-Python-program-that-converts-data-from-one-form-to-another" disabled>Python Converter App: developed a Python program that converts length from one form to another</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#WordPress-Dental-Clinic-Database-developed-a-database-using-WordPress-to-manage-patient-records-and-appointments" disabled>WordPress Dental Clinic Database: developed a database using WordPress to manage patient records and appointments</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Dental-Clinic-Database-Website-developed-a-website-to-showcase-the-dental-clinic-and-display-information-about-its-services" disabled >Dental Clinic Database Website: developed a website to showcase the dental clinic and display information about its services</a>
+                        </nav>
+                        <a class="nav-link side-nav text-dark" href="#Freelancing-Projects" disabled><h6>Freelancing Projects</h6></a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#jinarc-rmp-website" disabled>Jinarc RMP Website</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="col-xl-8 col-xs-9 col-lg-11 col-md-11 col-sm-11 overflow-auto rounded-2" id="sideportfolio" style="">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="projposition scrollspy-example-2 fixed-top"  tabindex="0">
+                    <div id="Training-Projects" class="mr-0">
+                        <h3 class="bg-dark p-3 rounded-2 mb-3 text-white position-static">Training Projects</h3>
+                        <div id="Social-Media-Management-scheduling-and-posting-content-on-social-media-platforms" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Social Media Management: scheduling and posting content on social media platforms</h4>
+                            <hr>
+                            <p>Social Media Management is an essential part of my WordPress training at DigitalJobsPH. It involves scheduling and posting content on various social media platforms, such as Facebook and Instagram. Although I enjoy creating unique and eye-catching posts using Giphy and animation, I found that crafting engaging captions can be challenging, especially as a beginner. Despite my efforts, I was surprised at how difficult it can be to attract followers. However, I'm committed to improving my skills in this area, and I'm excited to learn more about social media management strategies.</p>    
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/1.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Portfolio Website" data-image-location="css/projpics/1.png"/>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/soc-med-1.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Sample media post" data-image-location="css/projpics/soc-med-1.png"/>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12 mb-4 mb-lg-0">
+                                        <img src="css/projpics/soc-med-2.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Sample media post" data-image-location="css/projpics/soc-med-2.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> Google Docs, Meta Business Suite, Grammarly, Quillbot, Keynote, Giphy</p>    
+                            <p><strong>Sample post link:</strong> <a href="https://www.facebook.com/jnriwebcrafter/posts/pfbid028LfrNbWgxEyBndSsY9g3jKjegmMoAdEGekQsWfdBDNzAJpVN1sA8w9gE2jQ2ztWKl" class="demolink" target="_blank">Facebook Post, </a> <a href="https://www.facebook.com/jnriwebcrafter/posts/pfbid02j6ubiFRrWmbDTdaiSo9gjVRXYCWTYbC4nG3FLqJFTHEySJNb4auQZNDFuCnArqgKl" class="demolink" target="_blank">Instagram Post</a></p> 
+                            <p><strong>Content plan spreadsheet link:</strong> <a href="https://docs.google.com/spreadsheets/d/167lSduyoALmUVfYmob2gWUpH1ViNHRzeQOnvQQlfAOA/edit?usp=sharing" class="demolink" target="_blank">Google Sheets</a></p>    
+                        </div>
+                        <div id="Web-Development-Training-developed-a-simple-portfolio-website-using-HTML-CSS-and-JavaScript" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Web Development Training: developed a simple portfolio website</h4>
+                            <hr>
+                            <p>I have developed a simple portfolio website where I highlight my skills, education, and personal achievements. The UI design of the website is inspired by the tab layout of macOS. The website is built using HTML, CSS, and JavaScript, with HTML accounting for 59.8% of the code, CSS for 38.2%, and JavaScript for 2.0%. In total, I made 64 commits to the project and did my best to make the webpage responsive. It was developed as part of my web development training, which required me to use HTML, CSS, and JavaScript.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col mb-4 mb-lg-0">
+                                            <img src="css/projpics/2.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Portfolio Website" data-image-location="css/projpics/2.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScript, VS Code, Github, Git, Facebook Chat Plugin</p>    
+                            <p><strong>Demo link:</strong> <a href="https://jnrveneracion.github.io/portfolio/portfolio" class="demolink" target="_blank">https://jnrveneracion.github.io/portfolio/portfolio</a></p>   
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/portfolio" class="demolink" target="_blank">https://github.com/jnrveneracion/portfolio</a></p>   
+                            <!-- <p><strong>Challenges and solutions:</strong> aecati sequi architecto ratione.</p> 
+                            <p><strong>Lesson learned:</strong> aecati sequi architecto ratione.</p>
+                            <p><strong>Future plans:</strong> aecati sequi architecto ratione.</p>   -->
+                        </div>
+                        <div id="Database-Management-Training-developed-a-simple-database-using-MySQL-and-PHP" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Database Management Training: developed a simple database website</h4>
+                            <hr>
+                            <p>I completed a simple project for my DICT training, where I developed a CRUD website for database management. It was my first time working on a project like this, and although I had experience with HTML, CSS, and MySQL, I was still amazed by the end result. I also uploaded the website on HyperPHP free hosting to make it live and accessible to others. Overall, it was an exciting learning experience for me.</p>    
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/5.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Database Website" data-image-location="css/projpics/5.png"/>
+                                            <img src="css/projpics/6.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Database Website" data-image-location="css/projpics/6.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/7.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Database Website" data-image-location="css/projpics/7.png"/>
+                                            <img src="css/projpics/8.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Database Website" data-image-location="css/projpics/8.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL, VS Code, Github</p>    
+                            <p><strong>Demo link:</strong> <a href="http://www.jnri.hyperphp.com/" class="demolink" target="_blank">http://www.jnri.hyperphp.com/</a></p>   
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/simple-database" class="demolink" target="_blank">https://github.com/jnrveneracion/simple-database</a></p>
+                        </div>
+                        <div id="Android-App-Development-developed-a-simple-portfolio-app-using-Android-Studio" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Android App Development: developed a simple portfolio app using Android Studio</h4>
+                            <p>As part of my Android App Development training, I challenged myself to create a simple portfolio app using Android Studio. It was my first time working with Java programming language, and it was a bit challenging for me since I'm not a fan and haven't been exposed to it a lot. However, I persevered and managed to create a clean and organized output. Overall, the project was a great learning experience, and I'm excited to learn more about app development in the future.</p>    
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-lg-6 col-md-6 col-sm-8 mb-4 mb-lg-0">
+                                            <img src="css/projpics/9.png" class="projpic w-50 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Portfolio App" data-image-location="css/projpics/9.png"/>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-8 mb-4 mb-lg-0">
+                                            <img src="css/projpics/10.png" class="projpic w-50 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Simple Portfolio App" data-image-location="css/projpics/10.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> Java Programming</p>    
+                        </div>
+                    </div>
+                    <div id="Self-Projects">
+                        <h3 class="bg-dark p-3 rounded-2 mb-3 text-white">Self Projects</h3>
+                        <div id="Google-Sites-Development-developed-the-websites-for-Moldex-using-Google-Sites" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Google Sites Development: developed the websites for Moldex using Google Sites</h4>
+                            <hr>
+                            <p>I decided to take on a personal project and develop a realty website for Moldex. It was a bit challenging for me because I had to make sure that every description for each house/room was accurate and detailed. However, with my attention to detail and dedication, I was able to create a website that features all of Moldex's available properties. I even added embedded YouTube videos and social media links to make the website more engaging for potential buyers. Overall, it was a fulfilling experience to create a website that helps people find their dream home.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/13.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Realty Google Sites" data-image-location="css/projpics/13.png"/>
+                                            <img src="css/projpics/14.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Realty Google Sites" data-image-location="css/projpics/14.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/15.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Realty Google Sites" data-image-location="css/projpics/15.png"/>
+                                            <img src="css/projpics/16.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Realty Google Sites" data-image-location="css/projpics/16.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> Google Sites, Google Drive</p>    
+                            <p><strong>Demo link:</strong> <a href="https://sites.google.com/view/moldex-homes/moldex-homes-realty" class="demolink" target="_blank">https://sites.google.com/view/moldex-homes/moldex-homes-realty</a></p>   
+                        </div>
+                        <div id="Google-Sites-Development-developed-the-websites-for-Nickeysbox-using-Google-Sites" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Google Sites Development: developed the websites for Nickeysbox using Google Sites</h4>
+                            <hr>
+                            <p>My friend Nickey is an amazing photographer, and I wanted to help showcase his talent by creating a website for him. Using Google Sites, I developed a simple yet elegant site for Nickeysbox that highlights his photography skills. I added a bit of HTML and CSS to make the footer visually appealing and included embedded YouTube videos and social media links to help promote his work. To make it easier for clients to schedule sessions with him, I also added a Calendly link.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/11.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Photography Google Sites" data-image-location="css/projpics/11.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/12.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Photography Google Website" data-image-location="css/projpics/12.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> Google Sites, Google Drive, HTML5, CSS3</p>    
+                            <p><strong>Demo link:</strong> <a href="https://sites.google.com/view/nickeys-box/overview" class="demolink" target="_blank">https://sites.google.com/view/nickeys-box/</a></p>   
+                        </div>
+                        <div id="Web-Development-created-a-web-app-that-converts-values" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Web Development: created a web app that converts length values</h4>
+                            <hr>
+                            <p>I created a user interface for a web app that can convert length values. The app is built using HTML, CSS, and JavaScript, and according to the stats from GitHub, HTML accounts for 51.9% of the codebase, while CSS and JavaScript account for 35.8% and 12.3%, respectively. Although the app is currently only a UI, I plan to add computation formulas in JavaScript to make it fully functional. This project has been a great learning experience for me, and I'm excited to continue working on it to improve my skills in web development.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/21.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Length Converter Website" data-image-location="css/projpics/21.png"/>
+                                            <img src="css/projpics/22.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Length Converter Website" data-image-location="css/projpics/22.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/23.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Length Converter Website" data-image-location="css/projpics/23.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScipt, Github</p>    
+                            <p><strong>Demo link:</strong> <a href="https://jnrveneracion.github.io/length-converter-with-formula/" class="demolink" target="_blank">https://jnrveneracion.github.io/length-converter-with-formula/</a></p>  
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/length-converter-with-formula" class="demolink" target="_blank">https://github.com/jnrveneracion/length-converter-with-formula</a></p>     
+                        </div>
+                        <div id="Web-Development-developed-a-Guess-the-Next-Letter-game" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Web Development: developed a "Guess the Next Letter" game</h4>
+                            <hr>
+                            <p>I created a fun and challenging game called "Guess the Next Letter." The game is made using HTML, CSS, and JavaScript, and it has two modes: choice and typing. The player is also limited by a timer, adding an extra level of excitement to the game. Additionally, if the player gets a wrong answer, the game will provide the correct answer, and if the timer runs out, the game will give the player their score. The game is optimized for desktop view only and has a CSS usage of 43%, JavaScript usage of 30.6%, and HTML usage of 26.4%, as per the stats from Github. It was a fulfilling experience to create and play the game, even though it is not responsive. I'm looking forward to remaking it using Bootstrap to improve its functionality and accessibility.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/17.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Guessing Game" data-image-location="css/projpics/17.png"/>
+                                            <img src="css/projpics/18.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Guessing Game" data-image-location="css/projpics/18.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/19.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Guessing Game" data-image-location="css/projpics/19.png"/>
+                                            <img src="css/projpics/20.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Guessing Game" data-image-location="css/projpics/20.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScript, Github, Git, Google Fonts, Facebook Chat Plugin</p>    
+                            <p><strong>Demo link:</strong> <a href="https://jnrveneracion.github.io/the-next-letter/" class="demolink" target="_blank">https://jnrveneracion.github.io/the-next-letter/</a></p>  
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/the-next-letter" class="demolink" target="_blank">https://github.com/jnrveneracion/the-next-letter</a></p>    
+                        </div>
+                    </div>
+                    <div id="School-Projects">
+                        <h3 class="bg-dark p-3 rounded-2 mb-3 text-white">School Projects</h3>
+                        <div id="Python-Converter-App-developed-a-Python-program-that-converts-data-from-one-form-to-another" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Python Converter App: developed a Python program that converts length data from one form to another</h4>
+                            <hr>
+                            <p>During my second year in college, I worked on a group project where we developed a Python Converter App. This app was designed to convert length data from one form to another, and all members of the group contributed to its development. Personally, I was responsible for creating the formula and user interface using tkinter. Once the app was completed, I felt inspired to explore other app ideas using Python and tkinter. So, I started listing down my ideas and planning for future projects.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-6 mb-4 mb-lg-0">
+                                            <img src="css/projpics/25.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Python Length Converter App" data-image-location="css/projpics/25.png"/>
+                                        </div>
+                                        <div class="col-6 mb-4 mb-lg-0">
+                                            <img src="css/projpics/24.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Python Length Converter App" data-image-location="css/projpics/24.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> Python, tkinter UI</p>    
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/Length-Converter-with-formula-display" class="demolink" target="_blank">https://github.com/jnrveneracion/Length-Converter-with-formula-display</a></p>   
+                        </div>
+                        <div id="WordPress-Dental-Clinic-Database-developed-a-database-using-WordPress-to-manage-patient-records-and-appointments" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>WordPress Dental Clinic Database: developed a database using WordPress to manage patient records and appointments</h4>
+                            <hr>
+                            <p>I developed it using WordPress that allows the user to record patient records. Although it was my first time using my knowledge of information management in WordPress, I was able to make it work with the help of some plugins. However, I found it more challenging to work on this project compared to coding in PHP since I had limited knowledge of how to store and retrieve data in WordPress.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/26.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="WordPress Dental Clinic Database" data-image-location="css/projpics/26.png"/>
+                                            <img src="css/projpics/29.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="WordPress Dental Clinic Database" data-image-location="css/projpics/29.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/27.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="WordPress Dental Clinic Database" data-image-location="css/projpics/27.png"/>
+                                            <img src="css/projpics/28.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="WordPress Dental Clinic Database" data-image-location="css/projpics/28.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> WordPress, Hello Elementor Theme, Elementor(HeaderFooter, Elementskit) Plugin, Contact Form 7 Plugin, Tablesome Plugin, PHP code snippet Plugin, and etc.</p>    
+                            <p><strong>Demo link:</strong> <a href="http://famileedentalcareclinic.hyperphp.com" class="demolink" target="_blank">http://famileedentalcareclinic.hyperphp.com</a></p>  
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/Dental-Clinic-Management-System" class="demolink" target="_blank">https://github.com/jnrveneracion/Dental-Clinic-Management-System</a></p>    
+                        </div>
+                        <div id="Dental-Clinic-Database-Website-developed-a-website-to-showcase-the-dental-clinic-and-display-information-about-its-services" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Dental Clinic Website: Showcasing Information Management of Patient Records.</h4>
+                            <hr>
+                            <p>I created a Dental Clinic Website to showcase how patient records and related information are managed at a dental clinic. This is my first successful website, and I'm proud of the outcome. I accidentally discovered how to use Bootstrap, which made the website look more professional and user-friendly. I also realized that I could explore more uses of data by integrating MySQL and Chart.js. Although I didn't have the update and delete feature, I'm planning to update the website to include it in the future. I'm excited to continue exploring web development and improve the functionality of the website.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/30.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Dental Clinic Database Website" data-image-location="css/projpics/30.png"/>
+                                            <img src="css/projpics/32.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Dental Clinic Database Website" data-image-location="css/projpics/32.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/31.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Dental Clinic Database Website" data-image-location="css/projpics/31.png"/>
+                                            <img src="css/projpics/33.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Dental Clinic Database Website" data-image-location="css/projpics/33.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScipt, PHP, MySQL, Bootstrap, chart.js, xampp</p>    
+                            <p><strong>Demo link:</strong> <a href="http://dentalclinic.hyperphp.com/" class="demolink" target="_blank">http://dentalclinic.hyperphp.com/</a></p>  
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/dental-clinic" class="demolink" target="_blank">https://github.com/jnrveneracion/dental-clinic</a></p>    
+                        </div>
+                    </div>
+                    <div id="Freelancing-Projects" class="mr-0">
+                        <h3 class="bg-dark p-3 rounded-2 mb-3 text-white position-static">Freelancing Projects</h3>
+                        <div id="jinarc-rmp-website" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>Jinarc Risk Management Program</h4>
+                            <hr>
+                            <p>Social Media Management is an essential part of my WordPress training at DigitalJobsPH. It involves scheduling and posting content on various social media platforms, such as Facebook and Instagram. Although I enjoy creating unique and eye-catching posts using Giphy and animation, I found that crafting engaging captions can be challenging, especially as a beginner. Despite my efforts, I was surprised at how difficult it can be to attract followers. However, I'm committed to improving my skills in this area, and I'm excited to learn more about social media management strategies.</p>    
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/freelance-proj-1.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Jinarc RMP Website" data-image-location="css/projpics/freelance-proj-1.png"/>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/freelance-proj-2.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Jinarc RMP Website" data-image-location="css/projpics/freelance-proj-2.png"/>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/freelance-proj-3.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Jinarc RMP Website" data-image-location="css/projpics/freelance-proj-3.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, PHP, MySQL, jquery, Bootstrap, Xampp, and Google Fonts</p>    
+                            <p><strong>Link:</strong> <a href="https://jinarcrmp.com/" class="demolink" target="_blank">https://jinarcrmp.com/</a></p>  
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/jinarc-website" class="demolink" target="_blank">https://github.com/jnrveneracion/jinarc-website</a></p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl mt-5"> 
+        <div class="p-3">
+            <h1>Certificates<a class="text-light-emphasis hash" href="#certificates" id="certificates"> #</a></h1>
+        </div>
+        <!-- <h6 class="pl-3">Academics</h6>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="10000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row text-center align-items-center justify-content-start">
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/acads/3.png" width="83%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="High School Certificates" data-image-location="css/certificates/acads/3.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/acads/1.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="College 1st Semester President's Lister" data-image-location="css/certificates/acads/1.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/acads/2.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="College 2nd Semester President's Lister" data-image-location="css/certificates/acads/2.png"></div>
+                    </div>
+                </div>
+            </div>    
+        </div> -->
+        <h6 class="pl-3">IT related short Training, Webinar, and Online Course</h6>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="10000">
+            <div class="carousel-indicators" style="z-index: 1;">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row text-center align-items-center">
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/1.png" width="82%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/1.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/2.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/2.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/3.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/3.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/4.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/4.png"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row text-center align-items-center">
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/5.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/5.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/6.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/6.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/7.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/7.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/8.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/8.png"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row text-center align-items-center">
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/9.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/9.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/10.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/10.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/11.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/11.png"></div>
+                        <div class="cert-img col-lg-3 col-sm-6"><img src="css/certificates/trainingandwebinar/12.png" width="93%" class="m-3 certimg rounded-2 d-block" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="IT related short Training/Webinar" data-image-location="css/certificates/trainingandwebinar/12.png"></div>
+                    </div>
+                </div>
+                
+            </div>    
+        </div>  
+    </div>
+    <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(function() {
+        $("#header").load("common/header.html");
+        $("#footer").load("common/footer.html");
+    });
+    </script>
+    <script>
+        // document.getElementById('portfolio').style = 'color: black; font-weight: bold; border-bottom: solid black 3px;';
+        // document.getElementById('portfoliof').style = 'text-decoration: underline;';
+    </script>      
+</div>    
+</body>
+</html>
+

@@ -1,0 +1,334 @@
+/* #aboutpage {
+    background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+} */
+
+/* * {
+    border: 1px solid red;
+} */
+/* cp view */
+@media (max-width: 575.98px) {
+
+    .container-sm {
+        
+        margin-top: -510px;
+    }
+
+    .parallax {
+        background-repeat: repeat !important;
+        background-size: contain !important;
+    }
+
+    .my-photo{
+        width: 250px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .desc {
+        text-align: center;
+    }
+
+    #pictureko {
+        width: 350px !important;
+        height: 350px !important;
+    }
+
+    #logo {
+        width: 160px !important;
+        height: 35px !important;
+    }
+
+    #navbarNav,
+    .dropdown-menu.show {
+        text-align: center;
+    }
+
+    /* #navbackground {
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+    } */
+
+    #navbar-example3, #sidescroll {
+        /* background-color:  rgb(212, 206, 22); */
+        display: none !important;
+    }
+
+    .skilltext {
+        /* background-color:  green; */
+        display: block !important;
+    }
+
+    .projposition {
+        position: relative !important;
+        /* background-color:  rgb(208, 27, 27); */
+    }
+
+    .portheadtexta {
+        font-size: 20px !important;
+    }
+
+    .portheadtextb {
+        font-size: 50px !important;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container-sm {
+        /* background-color:  green; */
+        margin-top: -525px;
+    }
+
+    /* .parallax {
+        background-repeat: repeat !important;
+        background-size: contain !important;
+    } */
+
+    .desc {
+        text-align: center;
+    }
+
+    #navbarNav,
+    .dropdown-menu.show {
+        text-align: center;
+    }
+
+    /* #navbackground {
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+    } */
+
+    #navbar-example3 {
+        /* background-color:  green; */
+        display: none !important;
+    }
+
+    .skilltext {
+        /* background-color:  green; */
+        display: block !important;
+    }
+
+    .projposition {
+        position: relative !important;
+        /* background-color:  rgb(27, 202, 208); */
+    }
+    
+
+    #sideportfolio {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .portheadtext {
+        color: rgb(0, 213, 255);
+    }
+
+    
+
+    @media (max-width: 1399.98px) {
+        #sideportfolio {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+
+    @media (min-width: 767.98px) {
+        #sidescroll {
+            /* background-color:  rgb(114, 22, 212); */
+            display: block !important;
+        }
+
+        .skilltext {
+            /* background-color:  rgb(114, 22, 212); */
+            display: block !important;
+        }
+
+        .projposition {
+            position: absolute !important;
+            /* background-color:  rgb(208, 202, 27); */
+            /* margin-right: 20px; */
+        }
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container-sm {
+        /* background-color:  red; */
+        margin-top: -190px;
+    }
+
+    .desc {
+        text-align: start;
+    }
+
+
+
+    @media (max-width: 1399.98px) {
+        #pictureko {
+            width: 350px !important;
+            height: 350px !important;
+        }
+    }
+
+    #navbar-example3, .skilltext {
+        /* background-color:  red; */
+        display: none !important;
+    }
+
+    .projposition {
+        position: relative !important;
+        /* background-color:  rgb(208, 27, 178); */
+        margin-right: 0px !important;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 998px) {
+    .container-sm {
+        /* background-color:  blue; */
+        margin-top: -205px;
+    }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container-sm {
+        /* background-color:  rgb(27, 202, 208); */
+        margin-top: -205px;
+    }
+
+    #navbar-example3, .skilltext {
+        /* background-color:  blue; */
+        display: block !important;
+    }
+
+    .projposition {
+        position: absolute !important;
+        /* background-color:  rgb(27, 27, 208); */
+        margin-right: 2px !important;
+    }
+
+    .extra-footer {
+        position: absolute;
+        bottom: 0;
+      }
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container-sm {
+        /* background-color:  orange; */
+        margin-top: -260px;
+    }
+
+    #navbar-example3, .skilltext {
+        /* background-color:  blueviolet; */
+        display: block !important;
+    }
+
+    .projposition {
+        position: absolute !important;
+        /* background-color:  rgb(193, 27, 208); */
+        margin-right: 2px;
+    }
+
+    .extra-footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+#video {
+    filter: brightness(30%);
+    animation: fadeInDown;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s;
+    /* don't forget to set a duration! */
+}
+
+.underpichead,
+.underpicsub {
+    display: inline-block;
+    animation: fadeInRight;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+    font-family: monospace;
+}
+
+.underpichead {
+    color: white;
+    /* font-weight: bold; */
+}
+
+.underpicsub {
+    color: rgb(83, 83, 83);
+    letter-spacing: 2px;
+}
+
+
+#aboutpage {
+    animation: fadeInDownBig;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+#pictureko {
+    animation: fadeInLeft;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+
+#sideportfolio {
+    z-index: 0;
+    /* border-top: 1px solid rgb(235, 235, 235);
+    
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding-left: 1px;
+    padding-right: 1px; */
+    /* border-bottom: 1px solid rgb(212, 0, 0); */
+}
+
+/* portfolio page */
+.parallax {
+    /* The image used */
+    background-image: url("portfolio.jpeg");
+
+    /* Set a specific height */
+    min-height: -webkit-fill-available;
+    height: fit-content;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-box-shadow: inset 0px -30px 24px -20px rgba(0,0,0,0.10);
+    -moz-box-shadow: inset 0px -30px 24px -20px rgba(0,0,0,0.10);
+    box-shadow: inset 0px -30px 24px -20px rgba(0,0,0,0.10);
+    }
+
+    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+    }
+
+
+
+
+
+
+
+    
