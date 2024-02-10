@@ -16,9 +16,10 @@
             background-color: black !important;
         }
 
-        .side-nav:hover {
-            /* box-shadow: black 0px 3px 0px; */
-        }
+        /* .side-nav:hover {
+            box-shadow: black 0px 3px 0px;
+        } */
+        
         .side-nav.active {
             background-color: transparent !important;
             box-shadow: black 0px 3px 0px;
@@ -325,6 +326,11 @@
     </div>
 
     <script>
+          document.addEventListener('contextmenu', function(event) {
+               event.preventDefault();
+          });
+
+
         const exampleModal = document.getElementById('exampleModal')
         exampleModal.addEventListener('show.bs.modal', event => {
             const button = event.relatedTarget
@@ -382,10 +388,12 @@
                             <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Python-Converter-App-developed-a-Python-program-that-converts-data-from-one-form-to-another" disabled>Python Converter App: developed a Python program that converts length from one form to another</a>
                             <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#WordPress-Dental-Clinic-Database-developed-a-database-using-WordPress-to-manage-patient-records-and-appointments" disabled>WordPress Dental Clinic Database: developed a database using WordPress to manage patient records and appointments</a>
                             <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#Dental-Clinic-Database-Website-developed-a-website-to-showcase-the-dental-clinic-and-display-information-about-its-services" disabled >Dental Clinic Database Website: developed a website to showcase the dental clinic and display information about its services</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#InclusiJob-job-seeker-platform-dedicated-to-persons-with-disabilities-and-senior-citizens" disabled >InclusiJob:  job seeker platform dedicated to empowering Persons with Disabilities (PWDs) and Senior Citizens</a>
                         </nav>
                         <a class="nav-link side-nav text-dark" href="#Freelancing-Projects" disabled><h6>Freelancing Projects</h6></a>
                         <nav class="nav nav-pills flex-column">
                             <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#jinarc-rmp-website" disabled>Jinarc RMP Website</a>
+                            <a class="nav-link side-nav text-dark ms-3 my-1 pr-0" href="#nurich-website" disabled>Nurich Call Report System Management</a>
                         </nav>
                     </nav>
                 </nav>
@@ -637,6 +645,29 @@
                             <p><strong>Demo link:</strong> <a href="http://dentalclinic.hyperphp.com/" class="demolink" target="_blank">http://dentalclinic.hyperphp.com/</a></p>  
                             <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/dental-clinic" class="demolink" target="_blank">https://github.com/jnrveneracion/dental-clinic</a></p>    
                         </div>
+                         <div id="InclusiJob-job-seeker-platform-dedicated-to-persons-with-disabilities-and-senior-citizens" class="bg-white p-3 rounded-2 mb-3">
+                            <h4>InclusiJob: A job seeking platform.</h4>
+                            <hr>
+                            <p>InclusiJob: Our project is a job-seeking platform designed specifically for Filipino PWDs and Senior Citizens, developed using HTML, CSS, JavaScript, PHP, MySQL, Bootstrap, and integrated with email and SMS APIs.</p>    
+                            <!-- <p><strong>Screenshots/Photos:</strong></p>  -->
+                                <div class="container text-center ">
+                                    <!-- Gallery -->
+                                    <div class="row d-flex justify-content-center m-4">
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/34.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="InclusiJob Website" data-image-location="css/projpics/34.png"/>
+                                            <img src="css/projpics/35.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="InclusiJob Website" data-image-location="css/projpics/35.png"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4 mb-lg-0">
+                                            <img src="css/projpics/36.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="InclusiJob Website" data-image-location="css/projpics/36.png"/>
+                                            <img src="css/projpics/37.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="InclusiJob Website" data-image-location="css/projpics/37.png"/>
+                                        </div>
+                                    </div>
+                                    <!-- Gallery -->
+                                </div>  
+                            <p><strong>Technologies used:</strong> HTML5, CSS3, JavaScipt, PHP, MySQL, Bootstrap, chart.js, xampp, Hostinger, Github, email and SMS APIs.</p>    
+                            <p><strong>Demo link:</strong> <a href="https://inclusijob.capstone4-2.com/" class="demolink" target="_blank">https://inclusijob.capstone4-2.com/</a></p>  
+                            <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/inclusijob" class="demolink" target="_blank">https://github.com/jnrveneracion/inclusijob</a></p>    
+                        </div>
                     </div>
                     <div id="Freelancing-Projects" class="mr-0">
                         <h3 class="bg-dark p-3 rounded-2 mb-3 text-white position-static">Freelancing Projects</h3>
@@ -659,10 +690,34 @@
                                     </div>
                                     <!-- Gallery -->
                                 </div>  
-                            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, PHP, MySQL, jquery, Bootstrap, Xampp, and Google Fonts</p>    
-                            <p><strong>Link:</strong> <a href="https://jinarcrmp.com/" class="demolink" target="_blank">https://jinarcrmp.com/</a></p>  
+                            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, PHP, MySQL, jquery, Bootstrap, Xampp, Hostinger, Github, and Google Fonts</p>    
+                            <!-- <p><strong>Link:</strong> <a href="https://jinarcrmp.com/" class="demolink" target="_blank">https://jinarcrmp.com/</a></p> -->
+                            <p><strong>Proposed UI/UX:</strong> <a href="https://drive.google.com/drive/folders/1Jc2NxkspwgiMkJrjOkIs7vaaVayRFUpP?usp=share_link" class="demolink" target="_blank">https://drive.google.com/</a></p>    
                             <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/jinarc-website" class="demolink" target="_blank">https://github.com/jnrveneracion/jinarc-website</a></p>    
                         </div>
+                        <div id="nurich-website" class="bg-white p-3 rounded-2 mb-3">
+                         <h4>Nurich Call Report System Management</h4>
+                         <hr>
+                         <p>I have been entrusted with the responsibility of developing a call system for our client's website, transitioning the design from PSD format. This comprehensive system encompasses features such as sales recording, sales tracking, agent monitoring, and performance evaluation.</p>    
+                             <div class="container text-center ">
+                                 <!-- Gallery -->
+                                 <div class="row d-flex justify-content-center m-4">
+                                     <div class="col-12 mb-4 mb-lg-0">
+                                         <img src="css/projpics/freelance-proj-4.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Nurich Website" data-image-location="css/projpics/freelance-proj-4.png"/>
+                                     </div>
+                                     <div class="col-sm-6 col-xs-12 mb-4 mb-lg-0">
+                                         <img src="css/projpics/freelance-proj-5.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Nurich Website" data-image-location="css/projpics/freelance-proj-5.png"/>
+                                     </div>
+                                     <div class="col-sm-6 col-xs-12 mb-4 mb-lg-0">
+                                         <img src="css/projpics/freelance-proj-6.png" class="projpic w-100 shadow-sm rounded mb-4" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Nurich Website" data-image-location="css/projpics/freelance-proj-6.png"/>
+                                     </div>
+                                 </div>
+                                 <!-- Gallery -->
+                             </div>  
+                         <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, PHP, MySQL, jquery, Bootstrap, Xampp, location API, Hostinger, Github, and Google Fonts</p>    
+                         <p><strong>Proposed UI/UX:</strong> <a href="https://drive.google.com/drive/folders/1QZzR6d6GsSB7odimUeqpyY-q8IY8kSc_?usp=share_link" class="demolink" target="_blank">https://drive.google.com/</a></p>  
+                         <p><strong>Source code:</strong> <a href="https://github.com/jnrveneracion/nurich" class="demolink" target="_blank">https://github.com/jnrveneracion/nurich</a></p>    
+                     </div>
                     </div>
                 </div>
             </div>
